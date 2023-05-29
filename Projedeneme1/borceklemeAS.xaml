@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projedeneme1.borceklemeAS">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
+            <Frame BackgroundColor="Beige" CornerRadius="50" BorderColor="Black" >
+                <Entry x:Name="isimal"   TextColor="Black" Placeholder="Borç alınacak/verilecek isim" Keyboard="Text"/>
+            </Frame>
+            <Frame BackgroundColor="Beige" CornerRadius="50" BorderColor="Black" >
+                <StackLayout>
+                    <Entry x:Name="paraAl" Placeholder=" Tutar" Keyboard="Numeric"/>
+                    <StackLayout Orientation="Horizontal">
+                        <RadioButton x:Name="verildibtn" Content="Verildi" Value="+" IsChecked="True"/>
+                        <RadioButton x:Name="alindibtn" Content="Alındı" Value="-"/>
+                    </StackLayout>
+                  
+                </StackLayout>
+            </Frame>
+            <Frame BackgroundColor="Beige" CornerRadius="50" BorderColor="Black" >
+                <Entry x:Name="aciklama" Placeholder=" Açıklama" Keyboard="Text"/>
+            </Frame>
+            <Frame BackgroundColor="White" CornerRadius="10" BorderColor="Black">
+                <StackLayout>
+                    <Label Text="Ödenecek/Alınacak tarih:"/>
+                    <DatePicker x:Name="datepicker" Format="dd/MM/yyyy" />
+                </StackLayout>
+
+            </Frame>
+
+
+            <Button  Clicked="Button_Clicked" Text="Kaydet" CornerRadius="100" BackgroundColor="#32cd32"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

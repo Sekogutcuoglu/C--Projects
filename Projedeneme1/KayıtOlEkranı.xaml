@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projedeneme1.KayıtOlEkranı">
+   
+ <ContentPage.Content>
+        <StackLayout VerticalOptions="Center">
+            <StackLayout  HorizontalOptions="CenterAndExpand" VerticalOptions="Start">
+                <Label Text="KİŞİSEL BİLGİLER"  VerticalTextAlignment="Center"/>
+            </StackLayout>
+            <Frame BorderColor="#32cd32" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" CornerRadius="35" HasShadow="True" Padding="35">
+            <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <Image Source="isim.png" HeightRequest="32"/>
+                    <Entry x:Name="isimkayit" WidthRequest="150" Placeholder="İsim"  />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                        <Image Source="mail.png" HeightRequest="32"/>
+                        <Entry x:Name="emailkayit" WidthRequest="150"  Placeholder="E-Mail" Keyboard="Email"/>
+                 </StackLayout>
+                 <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" >
+                        <Image Source="kilit2.png" HeightRequest="32"/>
+                 <Entry x:Name="sifrekayit" WidthRequest="150" Placeholder="Password" IsPassword="True"/>
+                </StackLayout>
+               
+                
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                        <Button x:Name="kayitolbutonu" BackgroundColor="#32cd32" Text="DEVAM" WidthRequest="150" CornerRadius="100"   TextColor="White" Clicked="Button_Clicked"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="1/2" HorizontalOptions="CenterAndExpand"/>
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projedeneme1.borchatırlatıcı"
+             Title="Hatırlatıcı">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="250">
+
+            <Frame BackgroundColor="Beige" CornerRadius="50" BorderColor="Black" >
+                <Entry x:Name="isimal"   TextColor="Black" Placeholder="Ödenecek İsim" Keyboard="Text"/>
+            </Frame>
+            <Frame BackgroundColor="Beige" CornerRadius="50" BorderColor="Black">
+                <Entry x:Name="paraAl" Placeholder=" Tutar" Keyboard="Numeric" />
+            </Frame>
+            <DatePicker x:Name="datepicker" Format="dd.MM.yyyy" />
+
+            <Button Clicked="Button_Clicked" Text="Kaydet" CornerRadius="100" BackgroundColor="#32cd32" TextColor="White"/>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

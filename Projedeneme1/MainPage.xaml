@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projedeneme1.MainPage" Title="Seçim menüsü">
+
+    <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
+        <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
+            <Label Text="KULLANIM TİPİ" FontSize="13" HorizontalTextAlignment="Center"  FontAttributes="Bold"/>
+            <Label Text="Size daha uygun olan seçeneğe dokunun" FontSize="13" HorizontalTextAlignment="Center" />
+
+
+        </StackLayout>
+        
+        <StackLayout Orientation="Horizontal"  HeightRequest="350" HorizontalOptions="Center" Spacing="13">
+
+            <Button  CornerRadius="13"  Text="KİŞİSEL HESAP" WidthRequest="150"  Clicked="Button_Clicked" ContentLayout="Top,0" ImageSource="man.png"  Padding="0,90,0,90" BackgroundColor="#32cd32" />
+
+            <Button  CornerRadius="13"  Text="İŞ YERİ HESABI" WidthRequest="150" Clicked="isyerihesabıbutonu" ContentLayout="Top,0" ImageSource="kilit.png" Padding="0,90,0,90"  BackgroundColor="#32cd32" IsEnabled="False"/>
+
+        </StackLayout>
+    </StackLayout>
+    
+</ContentPage>

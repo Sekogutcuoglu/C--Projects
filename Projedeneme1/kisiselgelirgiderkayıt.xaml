@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projedeneme1.kisiselgelirgiderkayıt"
+             Title="Aylık Gelir-Gider Kayıt">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center">
+            <StackLayout  HorizontalOptions="CenterAndExpand" VerticalOptions="Start">
+                <Label   VerticalTextAlignment="Center"/>
+            </StackLayout>
+            <ScrollView Margin="0,0,0,10">
+                <Frame BorderColor="#32cd32" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" CornerRadius="35" HasShadow="True" Padding="35">
+                    <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <Image Source="gelir.png" HeightRequest="32"/>
+                            <Entry x:Name="gelirentry" WidthRequest="150"  Placeholder="Net Gelir" Keyboard="Numeric"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <Image Source="house.png" HeightRequest="32"/>
+                            <Entry x:Name="eventry" WidthRequest="150"  Placeholder="Ev" Keyboard="Numeric"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <Image Source="kitchen.png" HeightRequest="32"/>
+                            <Entry x:Name="mutfakentry" WidthRequest="150"  Placeholder="Mutfak" Keyboard="Numeric"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <Image Source="alisveris.png" HeightRequest="32"/>
+                            <Entry x:Name="alisverisentry" WidthRequest="150"  Placeholder="Alış-Veriş" Keyboard="Numeric"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <Image Source="lifestyle.png" HeightRequest="32"/>
+                            <Entry x:Name="kisiselentry" WidthRequest="150"  Placeholder="Kişisel" Keyboard="Numeric"/>
+                        </StackLayout>
+                       
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <Image Source="debt.png" HeightRequest="32"/>
+                            <Entry x:Name="borcentry" WidthRequest="150"  Placeholder="Borç" Keyboard="Numeric"/>
+                        </StackLayout>
+                         <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <Image Source="expenses.png" HeightRequest="32"/>
+                            <Entry x:Name="digerentry" WidthRequest="150"  Placeholder="Diğer" Keyboard="Numeric"/>
+                        </StackLayout>
+                        <StackLayout>
+                            <StackLayout HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" HeightRequest="10" WidthRequest="150" >
+                                <Label  Text="Arabanız Var Mı?" Padding="0,23,0,0"/>
+                            </StackLayout>
+                            <CheckBox Grid.Column="2" x:Name="arabavarmı" CheckedChanged="arabavarmı_CheckedChanged" />
+                        </StackLayout>
+                        <StackLayout x:Name="araba" Orientation="Horizontal" HorizontalOptions="CenterAndExpand" IsVisible="false">
+                            <Image Source="battery.png" HeightRequest="32"/>
+                            <Entry x:Name="arabagider" WidthRequest="150"  Placeholder="Araba" Keyboard="Numeric"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <Button x:Name="kayitolbutonu" Text="Kayıt OL" WidthRequest="150" CornerRadius="100"  BackgroundColor="#32cd32" TextColor="White" Clicked="Button_Clicked" />
+                        </StackLayout>
+                        <StackLayout>
+                            <Label Text="2/2" HorizontalOptions="CenterAndExpand"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+            </ScrollView>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projedeneme1.Dovizlerim"
+             Title="Döviz Kurları">
+    <ContentPage.Content>
+
+        <StackLayout Padding="6"  BackgroundColor="WhiteSmoke">
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Frame  BackgroundColor="White" VerticalOptions="Center" >
+                    <StackLayout Orientation="Horizontal" >
+                        <Label Text="Döviz Kodu" HorizontalOptions="StartAndExpand" TextColor="Red"/>
+                        <Label Text="Efektif Alış" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" TextColor="Red"/>
+                        <Label Text="Efektif Satış" HorizontalTextAlignment="Center" HorizontalOptions="EndAndExpand" TextColor="Red"/>
+                    </StackLayout>
+                </Frame>
+                <Frame  BackgroundColor="LightGray" >
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="USD/TRY" HorizontalOptions="StartAndExpand"/>
+                        <Label x:Name="usdAlis" Text="" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand"/>
+                        <Label x:Name="usdSatis" Text="" HorizontalTextAlignment="Center" HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+                </Frame>
+                <Frame  >
+                    <StackLayout Orientation="Horizontal" >
+                        <Label Text="EUR/TRY" HorizontalOptions="StartAndExpand"/>
+                        <Label x:Name="eurAlis" Text="" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand"/>
+                        <Label x:Name="eurSatis" Text="" HorizontalTextAlignment="Center" HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+                </Frame>
+                <Frame  BackgroundColor="LightGray">
+                    <StackLayout Orientation="Horizontal">
+
+                        <Label Text="GBP/TRY" HorizontalOptions="StartAndExpand"/>
+                        <Label x:Name="gbpAlis" Text="" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand"/>
+                        <Label x:Name="gbpSatis" Text="" HorizontalTextAlignment="Center" HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+                </Frame>
+                <Frame  >
+                    <StackLayout Orientation="Horizontal" >
+                        <Label Text="KWD/TRY" HorizontalOptions="StartAndExpand"/>
+                        <Label x:Name="KWDAlis" Text="" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand"/>
+                        <Label x:Name="KWDSatis" Text="" HorizontalTextAlignment="Center" HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+                </Frame>
+                <Frame  BackgroundColor="LightGray" >
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="JPY/TRY" HorizontalOptions="StartAndExpand"/>
+                        <Label x:Name="JPYAlis" Text="" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand"/>
+                        <Label x:Name="JPYSatis" Text="" HorizontalTextAlignment="Center" HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+                </Frame>
+                <Frame >
+                    <StackLayout Orientation="Horizontal" >
+                        <Label Text="SEK/TRY" HorizontalOptions="StartAndExpand"/>
+                        <Label x:Name="SEKAlis" Text="" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand"/>
+                        <Label x:Name="SEKSatis" Text="" HorizontalTextAlignment="Center" HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+                </Frame>
+
+            </StackLayout>
+            
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

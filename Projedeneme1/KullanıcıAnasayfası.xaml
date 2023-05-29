@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projedeneme1.KullanıcıAnasayfası" Title="Anasayfa"
+             xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             BackgroundColor="#ffffff">
+
+    <StackLayout>
+            
+        <ScrollView>
+            
+            <StackLayout Padding="0,0,0,10">
+                <StackLayout Padding="4,0">
+                    <StackLayout>
+                        <Label  x:Name="ToplamGelirgöster" Text="" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" FontFamily="serif"  FontSize="25" TextColor="Green"/>
+                        <Frame x:Name="bakiyeframe" CornerRadius="10"  HasShadow="True" VerticalOptions="Start" Padding="4">
+                            <StackLayout Orientation="Horizontal"  HeightRequest="20"  >
+
+                                <Label Text="Bakiye" HorizontalOptions="StartAndExpand"  VerticalTextAlignment="Center" TextColor="White" Padding="10,0,0,0"/>
+                                <Label x:Name="kalangöster" Text="3000₺" VerticalTextAlignment="Center" TextColor="White" Padding="0,0,10,0"/>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                    <microcharts:ChartView x:Name="chartViewRadialGauge" HeightRequest="230"  Margin="0,10,0,0"    />
+                    <ImageButton  Source="rotation.png" HorizontalOptions="EndAndExpand" CornerRadius="100" WidthRequest="50" Clicked="Button_Clicked" BackgroundColor="Transparent"/>
+
+                </StackLayout>
+
+                <Frame  CornerRadius="100" BackgroundColor="#ffe1ff" HasShadow="True" VerticalOptions="Start">
+                    <StackLayout Orientation="Horizontal"  Padding="4,0,6,0" HeightRequest="20" >
+                        <Frame VerticalOptions="FillAndExpand" BackgroundColor="#ffe1ff" Padding="1" BorderColor="Azure" CornerRadius="5"  WidthRequest="50" >
+                            <StackLayout VerticalOptions="FillAndExpand">
+                                <Label x:Name="evgideryüzde" TextColor="Black" HorizontalOptions="CenterAndExpand" Text="%25" />
+                            </StackLayout>
+                        </Frame>
+                        <Label Text="Ev Giderleri" HorizontalOptions="StartAndExpand"  VerticalTextAlignment="Center"/>
+                        <Label x:Name="EvGiderGöster" Text="3000₺" VerticalTextAlignment="Center"/>
+                      
+
+                    </StackLayout>
+                  
+                </Frame>
+                <Frame  CornerRadius="100" BackgroundColor="#009acd" HasShadow="True" VerticalOptions="Start">
+                    <StackLayout Orientation="Horizontal"  Padding="4,0,6,0" HeightRequest="20" >
+                        <Frame VerticalOptions="FillAndExpand" BackgroundColor="#009acd" Padding="1" BorderColor="Azure" CornerRadius="5"  WidthRequest="50" >
+                            <StackLayout VerticalOptions="FillAndExpand">
+                                <Label x:Name="mutfakgideryüzde" TextColor="Black" HorizontalOptions="CenterAndExpand" Text="%25" />
+                            </StackLayout>
+                        </Frame>
+                        
+                        <Label Text="Mutfak Giderleri" HorizontalOptions="StartAndExpand"  VerticalTextAlignment="Center"/>
+                        <Label x:Name="MutfakGiderGöster" Text="3000₺" VerticalTextAlignment="Center"/>
+                    </StackLayout>
+                </Frame>
+                <Frame  CornerRadius="100" BackgroundColor="#ee9a00" HasShadow="True" VerticalOptions="Start">
+                    <StackLayout Orientation="Horizontal"  Padding="4,0,6,0" HeightRequest="20" >
+                        <Frame VerticalOptions="FillAndExpand" BackgroundColor="#ee9a00" Padding="1" BorderColor="Azure" CornerRadius="5"  WidthRequest="50" >
+                            <StackLayout VerticalOptions="FillAndExpand">
+                                <Label x:Name="alisverisyüzde" TextColor="Black" HorizontalOptions="CenterAndExpand" Text="%25" />
+                            </StackLayout>
+                        </Frame>
+                        <Label Text="Alış-Veriş" HorizontalOptions="StartAndExpand"  VerticalTextAlignment="Center"/>
+                        <Label x:Name="alisverisgöster" Text="3000₺" VerticalTextAlignment="Center"/>
+                    </StackLayout>
+                </Frame>
+                <Frame  CornerRadius="100" BackgroundColor="#cdcd00" HasShadow="True" VerticalOptions="Start">
+                    <StackLayout Orientation="Horizontal"  Padding="4,0,6,0" HeightRequest="20" >
+                        <Frame VerticalOptions="FillAndExpand" BackgroundColor="#cdcd00" Padding="1" BorderColor="Azure" CornerRadius="5"  WidthRequest="50" >
+                            <StackLayout VerticalOptions="FillAndExpand">
+                                <Label  x:Name="kisiselyüzde" TextColor="Black" HorizontalOptions="CenterAndExpand" Text="%25" />
+                            </StackLayout>
+                        </Frame>
+                        <Label Text="Kişisel Giderler" HorizontalOptions="StartAndExpand"  VerticalTextAlignment="Center"/>
+                        <Label x:Name="kisiselgöster" Text="3000₺" VerticalTextAlignment="Center"/>
+                    </StackLayout>
+                </Frame>
+                <Frame  CornerRadius="100" BackgroundColor="#c1cdc1" HasShadow="True" VerticalOptions="Start">
+                    <StackLayout Orientation="Horizontal"  Padding="4,0,6,0" HeightRequest="20" >
+                        <Frame VerticalOptions="FillAndExpand" BackgroundColor="#c1cdc1" Padding="1" BorderColor="Azure" CornerRadius="5"  WidthRequest="50" >
+                            <StackLayout VerticalOptions="FillAndExpand">
+                                <Label  x:Name="borcyüzde" TextColor="Black" HorizontalOptions="CenterAndExpand" Text="%25" />
+                            </StackLayout>
+                        </Frame>
+                        <Label Text="Borçlar" HorizontalOptions="StartAndExpand"  VerticalTextAlignment="Center"/>
+                        <Label x:Name="borcgöster" Text="3000₺" VerticalTextAlignment="Center"/>
+                    </StackLayout>
+                </Frame>
+                <Frame  CornerRadius="100" BackgroundColor="#c0ff3e" HasShadow="True" VerticalOptions="Start">
+                    <StackLayout Orientation="Horizontal"  Padding="4,0,6,0" HeightRequest="20" >
+                        <Frame VerticalOptions="FillAndExpand" BackgroundColor="#c0ff3e" Padding="1" BorderColor="Azure" CornerRadius="5"  WidthRequest="50" >
+                            <StackLayout VerticalOptions="FillAndExpand">
+                                <Label  x:Name="digeryüzde" TextColor="Black" HorizontalOptions="CenterAndExpand" Text="%25" />
+                            </StackLayout>
+                        </Frame>
+                        <Label Text="Diğer" HorizontalOptions="StartAndExpand"  VerticalTextAlignment="Center"/>
+                        <Label x:Name="digergöster" Text="3000₺" VerticalTextAlignment="Center"/>
+                    </StackLayout>
+                </Frame>
+                <Frame x:Name="arabavarmı" CornerRadius="100" BackgroundColor="#dc143c" HasShadow="True" VerticalOptions="Start"  >
+                    <StackLayout Orientation="Horizontal"  Padding="4,0,6,0" HeightRequest="20" >
+                        <Frame VerticalOptions="FillAndExpand" BackgroundColor="#dc143c" Padding="1" BorderColor="Azure" CornerRadius="5"  WidthRequest="50" >
+                            <StackLayout VerticalOptions="FillAndExpand">
+                                <Label  x:Name="arabayüzde" TextColor="Black" HorizontalOptions="CenterAndExpand" Text="%25" />
+                            </StackLayout>
+                        </Frame>
+                        <Label Text="Araç Giderleri" HorizontalOptions="StartAndExpand"  VerticalTextAlignment="Center"/>
+                        <Label x:Name="aracgöster" Text="3000₺" VerticalTextAlignment="Center"/>
+                    </StackLayout>
+                </Frame>
+             
+
+
+            </StackLayout>
+        </ScrollView>
+       
+
+
+
+
+    </StackLayout>
+
+  
+</ContentPage>

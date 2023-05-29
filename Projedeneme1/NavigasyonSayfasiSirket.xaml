@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projedeneme1.NavigasyonSayfasiSirket"
+            xmlns:local="clr-namespace:Projedeneme1" Title="Flyout">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="AliceBlue">
+
+            <ListView x:Name="Sirketflylist" x:FieldModifier="public" Margin="5,20,5,5" >
+                <ListView.ItemsSource>
+                    <x:Array Type="{x:Type local:NavigasyonOzellik}">
+                        <local:NavigasyonOzellik Title="Profile" IconSource="profile.png" TargetPage="{x:Type local:KayıtOlEkranı}"/>
+                        <local:NavigasyonOzellik Title="Add Meal" IconSource="yemek.png" TargetPage="{x:Type local:MainPage}"/>
+                        <local:NavigasyonOzellik Title="Add Exercise" IconSource="kedi.png" TargetPage="{x:Type local:SiframiUnuttumSirketHesap}"/>
+                        <local:NavigasyonOzellik Title="Water" IconSource="waterbottle.png" TargetPage="{x:Type local:KayıtOlEkranı}"/>
+                        <local:NavigasyonOzellik Title="Weekly Information" IconSource="days.png" TargetPage="{x:Type local:KayıtOlEkranı}"/>
+                        <local:NavigasyonOzellik Title="LogOut" IconSource="exit.png" TargetPage="{x:Type local:KayıtOlEkranı}"/>
+                    </x:Array>
+                </ListView.ItemsSource>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="33"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Image Grid.Column="0" HeightRequest="100" Source="{Binding IconSource}"/>
+                                <Label Grid.Column="1" FontSize="20" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"  Text="{Binding Title}"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

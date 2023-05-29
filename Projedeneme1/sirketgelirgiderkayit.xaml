@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projedeneme1.sirketgelirgiderkayit">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center">
+            
+            <ScrollView >
+                <Frame BorderColor="LawnGreen" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" CornerRadius="35" HasShadow="True" Padding="25">
+                    <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
+                        
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <Image Source="user.png" HeightRequest="32"/>
+                            <Entry x:Name="hasilat" WidthRequest="150"  Placeholder="Hasılat" Keyboard="Numeric" />
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <Image Source="user.png" HeightRequest="32"/>
+                            <Entry x:Name="satismaliyeti" WidthRequest="150"  Placeholder="Satışların Maliyeti" Keyboard="Numeric"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <Image Source="user.png" HeightRequest="32"/>
+                            <Entry x:Name="faaliyetgiderleri" WidthRequest="150"  Placeholder="Faaliyet Giderleri" Keyboard="Numeric"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <Image Source="user.png" HeightRequest="32"/>
+                            <Entry x:Name="yatirimfaaliyetlerigelir" WidthRequest="150"  Placeholder="Y.F.Gelirler" Keyboard="Numeric"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <Image Source="user.png" HeightRequest="32"/>
+                            <Entry   x:Name="yatirimfaaliyetlerigider" WidthRequest="150"  Placeholder="Y.F.Giderler" Keyboard="Numeric"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <Image Source="user.png" HeightRequest="32"/>
+                            <Entry  x:Name="finansmangelir" WidthRequest="150"  Placeholder="Finansman Gelir" Keyboard="Numeric"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <Image Source="user.png" HeightRequest="32"/>
+                            <Entry x:Name="finansmangider" WidthRequest="150"  Placeholder="Finansman Gider" Keyboard="Numeric"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <Image Source="user.png" HeightRequest="32"/>
+                            <Entry x:Name="vergiler" WidthRequest="150"  Placeholder="Vergiler" Keyboard="Numeric"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <Button x:Name="kayitolbutonu" Text="Kayıt OL" WidthRequest="150" CornerRadius="100"  BackgroundColor="LawnGreen" TextColor="Black" Clicked="kayitolbutonu_Clicked"/>
+                        </StackLayout>
+                        <StackLayout>
+                            <Label Text="*Y.F - Yatırım faaliyetlerinden" HorizontalOptions="CenterAndExpand"/>
+                            <Label Text="2/2" HorizontalOptions="CenterAndExpand"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

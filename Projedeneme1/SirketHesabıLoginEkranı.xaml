@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projedeneme1.SirketHesabıLoginEkranı">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
+            <Image Source="user.png" HeightRequest="90" VerticalOptions="CenterAndExpand"/>
+            <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" Margin="0,11,0,0">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <Image Source="user.png" HeightRequest="30"/>
+                    <Entry x:Name="emailtxt" WidthRequest="200" Placeholder="E-Mail"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <Image Source="user.png" HeightRequest="30"/>
+                    <Entry x:Name="sifretxt"  WidthRequest="200" Placeholder="Password" IsPassword="True"/>
+                </StackLayout>
+                <StackLayout VerticalOptions="Center" HorizontalOptions="CenterAndExpand" Margin="0,11,0,0">
+                    <Button Text="LOGIN" WidthRequest="250" CornerRadius="15" BackgroundColor="CornflowerBlue" TextColor="White" Clicked="Button_Clicked"/>
+                    <StackLayout Orientation="Horizontal"  HorizontalOptions="CenterAndExpand"  Margin="0,8,0,0">
+                        <Label Text="Hesabınız yok mu ?"></Label>
+                        <Label Text="Kayıt Ol" TextDecorations="Underline" FontAttributes="Bold" >
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="KayıtOl1"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </StackLayout>
+                    <Label Text="Şifremi Unuttum"  TextDecorations="Underline" FontAttributes="Bold" HorizontalOptions="CenterAndExpand">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="SifremiUnuttum1"/>
+
+                        </Label.GestureRecognizers>
+
+                    </Label>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projedeneme1.borcekle" Title="Borç Takip">
+    <ContentPage.Content>
+            <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" WidthRequest="530" Padding="0,5,0,5">
+            <StackLayout Orientation="Horizontal" VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Margin="10">
+                <ListView x:Name="lsview" RowHeight="102" HasUnevenRows="True" SelectionMode="None"  WidthRequest="8000" Refreshing="refresh_list"  >
+                    
+                    <ListView.ItemTemplate >
+                        <DataTemplate>
+                            <ViewCell Height="100" >
+                                <Frame BackgroundColor="{Binding color}" CornerRadius="15">
+                                    <StackLayout Orientation="Horizontal" >
+
+                                        <StackLayout HorizontalOptions="StartAndExpand" VerticalOptions="Center" Spacing="0" >
+                                            <Label TextColor="Black" Text="{Binding isimK}" FontSize="Medium" FontAttributes="Bold"/>
+                                            <StackLayout Orientation="Horizontal">
+                                                <Label Text="{Binding borcmiktar}"  FontSize="12" FontAttributes="None"/>
+                                                <Label Text="{Binding aciklama}" FontSize="12" FontAttributes="None"/>
+                                                <Label Text="{Binding tarih}" FontSize="12" FontAttributes="None" />
+                                            </StackLayout>
+                                        </StackLayout>
+                                        <StackLayout  Orientation="Horizontal">
+                                            <ImageButton x:Name="deleteButton" Source="clear.png" WidthRequest="25" HeightRequest="25" BackgroundColor="Transparent"  CommandParameter="{Binding .}" Clicked="deleteButton_Clicked"></ImageButton>
+                                        </StackLayout>
+                                        
+                                    </StackLayout>
+                                    
+                                </Frame>
+                            
+                            </ViewCell>
+                            
+                        </DataTemplate>
+                        
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+
+
+            <ImageButton Source="arti1.png" HorizontalOptions="End" VerticalOptions="End" Clicked="ImageButton_Clicked" WidthRequest="90" HeightRequest="70" BackgroundColor="Transparent" />
+
+
+        </StackLayout>
+
+     
+
+
+
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projedeneme1.updatepage"
+             Title="Gelir-Gider Güncelle">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+        
+            <ScrollView Margin="0,0,0,0">
+                <Frame BorderColor="#32cd32" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" CornerRadius="55" HasShadow="True" Padding="35">
+                    <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
+                        
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <Label Text="Net Gelir :" VerticalOptions="Center" FontSize="Medium"/>
+                            <Entry x:Name="netgelirup" WidthRequest="150"   Keyboard="Numeric" HorizontalOptions="EndAndExpand"/>
+                        </StackLayout>
+                        
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <Label Text="Ev Gider :" VerticalOptions="Center" FontSize="Medium"/>
+                            <Entry x:Name="evgiderup" WidthRequest="150"   Keyboard="Numeric" HorizontalOptions="EndAndExpand"/>
+                        </StackLayout>
+                        
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <Label Text="Mutfak Gider :" VerticalOptions="Center" FontSize="Medium"/>
+                            <Entry x:Name="mutfakgiderup" WidthRequest="150"   Keyboard="Numeric" HorizontalOptions="EndAndExpand"/>
+                        </StackLayout>
+                        
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <Label Text="Alış-Veriş Gider:" VerticalOptions="Center" FontSize="Medium"/>
+                            <Entry x:Name="alisverisgiderup" WidthRequest="150"   Keyboard="Numeric" HorizontalOptions="EndAndExpand"/>
+                        </StackLayout>
+                        
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <Label Text="Kişisel Gider :" VerticalOptions="Center" FontSize="Medium"/>
+                            <Entry x:Name="kisiselgiderup" WidthRequest="150"   Keyboard="Numeric" HorizontalOptions="EndAndExpand"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <Label Text="Borç :" VerticalOptions="Center" FontSize="Medium"/>
+                            <Entry x:Name="borcgiderup" WidthRequest="150"   Keyboard="Numeric" HorizontalOptions="EndAndExpand"/>
+                        </StackLayout>
+                        
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <Label Text="Diğer :" VerticalOptions="Center" FontSize="Medium"/>
+                            <Entry x:Name="digerup" WidthRequest="150"   Keyboard="Numeric" HorizontalOptions="EndAndExpand"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <Label Text="Araba :" VerticalOptions="Center" FontSize="Medium"/>
+                            <Entry x:Name="arabagiderup" WidthRequest="150"   Keyboard="Numeric" HorizontalOptions="EndAndExpand"/>
+                        </StackLayout>
+
+                        
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                            <Button  Text="Güncelle" WidthRequest="150" CornerRadius="100"  BackgroundColor="#32cd32" TextColor="White" Clicked="Button_Clicked"  />
+                        </StackLayout>
+                     
+                    </StackLayout>
+                </Frame>
+            </ScrollView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
